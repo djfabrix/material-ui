@@ -1,10 +1,10 @@
 {
-  "name": "material-ui-build-next",
-  "private": true,
+  "name": "material-ui",
+  "private": false,
   "author": "Material-UI Team",
   "version": "1.0.0-beta.32",
   "description": "React components that implement Google's Material Design.",
-  "main": "./src/index.js",
+  "main": "./index.js",
   "keywords": [
     "react",
     "react-component",
@@ -197,14 +197,5 @@
     "@types/react": "16.0.35"
   },
   "side-effects": false,
-  "nyc": {
-    "include": [
-      "src/**/*.js"
-    ],
-    "exclude": [
-      "**/*.spec.js"
-    ],
-    "sourceMap": false,
-    "instrument": false
-  }
+  "module": "./index.es.js"
 }
