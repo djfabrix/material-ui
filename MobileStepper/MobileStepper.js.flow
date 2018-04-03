@@ -87,6 +87,11 @@ function MobileStepper(props) {
           })}
         </div>
       )}
+      {variant === 'text' && (
+        <div>
+          <p>pagina {activeStep} di {step}</p>
+        </div>
+      )}
       {variant === 'progress' && (
         <div className={classes.progress}>
           <LinearProgress mode="determinate" value={Math.ceil(activeStep / (steps - 1) * 100)} />

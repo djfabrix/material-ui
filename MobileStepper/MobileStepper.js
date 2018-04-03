@@ -119,6 +119,11 @@ function MobileStepper(props) {
         return _react2.default.createElement('div', { key: step, className: dotClassName });
       })
     ),
+    variant === 'text' && _react2.default.createElement(
+      'div',
+      {},
+      _react2.default.createElement('p', {}, 'pagina ',(activeStep + 1),' di ',steps)
+    ),
     variant === 'progress' && _react2.default.createElement(
       'div',
       { className: classes.progress },
